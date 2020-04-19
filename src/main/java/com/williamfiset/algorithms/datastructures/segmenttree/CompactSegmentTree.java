@@ -7,6 +7,7 @@
 package com.williamfiset.algorithms.datastructures.segmenttree;
 
 public class CompactSegmentTree {
+
   private int N;
 
   // Let UNIQUE be a value which does NOT
@@ -23,6 +24,7 @@ public class CompactSegmentTree {
 
   public CompactSegmentTree(long[] values) {
     this(values.length);
+    // TODO(william): Implement smarter construction.
     for (int i = 0; i < N; i++) modify(i, values[i]);
   }
 
@@ -60,5 +62,11 @@ public class CompactSegmentTree {
       throw new IllegalStateException("UNIQUE should not be the return value.");
     }
     return res;
+  }
+
+  public static void main(String[] args) {
+    long[] values = new long[] {3, 0, 8, 9, 8, 2, 5, 3, 7, 1};
+    CompactSegmentTree st = new CompactSegmentTree(values);
+    System.out.println(java.util.Arrays.toString(st.tree));
   }
 }

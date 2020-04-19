@@ -1,5 +1,7 @@
 
-[![Travis](https://img.shields.io/travis/williamfiset/Algorithms.svg)](https://travis-ci.org/williamfiset/Algorithms) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Java CI with Gradle](https://github.com/williamfiset/Algorithms/workflows/Java%20CI%20with%20Gradle/badge.svg)
+![README Checker](https://github.com/williamfiset/Algorithms/workflows/README%20URL%20Checker/badge.svg)
 
 # Algorithms & data structures project
 
@@ -40,7 +42,7 @@ $ java -cp classes com.williamfiset.algorithms.search.BinarySearch
 
 ## Running with Gradle
 
-This project supports the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html). The Gradle wrapper automatically downloads Gradle at the first time it runs, so expect a delay when running the firt command below.
+This project supports the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html). The Gradle wrapper automatically downloads Gradle at the first time it runs, so expect a delay when running the first command below.
 
 If you are on Windows, use `gradlew.bat` instead of `./gradlew` below.
 
@@ -48,13 +50,13 @@ If you are on Windows, use `gradlew.bat` instead of `./gradlew` below.
 Run a single algorithm like this:
 
 ```
-./gradlew -q run -Palgorithm=<algorithm-subpackage>.<algorithm-class>
+./gradlew run -Palgorithm=<algorithm-subpackage>.<algorithm-class>
 ```
 
 
 Alternatively, you can run a single algorithm specifying the full class name
 ```
-./gradlew -q run -Pmain=<algorithm-fully-qualified-class-name>
+./gradlew run -Pmain=<algorithm-fully-qualified-class-name>
 
 ```
 
@@ -72,8 +74,7 @@ or
 
 # Data Structures
 * [:movie_camera:](https://www.youtube.com/watch?v=q4fnJZr8ztY)[Balanced Trees](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/balancedtree)
-    * [Avl Tree (recursive)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/balancedtree/AVLTreeRecursive.java)
-    * [Avl Tree (recursive, mildly optimized)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/balancedtree/AVLTreeRecursiveOptimized.java)
+    * [AVL Tree (recursive)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/balancedtree/AVLTreeRecursive.java)
     * [Red Black Tree (recursive)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/balancedtree/RedBlackTree.java)
 * [:movie_camera:](https://www.youtube.com/watch?v=JfSdGQdAzq8)[Binary Search Tree](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/binarysearchtree/BinarySearchTree.java)
 * [Splay Tree](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/binarysearchtree/SplayTree.java)
@@ -84,6 +85,7 @@ or
 * [:movie_camera:](https://www.youtube.com/watch?v=RgITNht_f4Q)[Fenwick Tree](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/fenwicktree)
     * [Fenwick Tree (range query, point updates)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/fenwicktree/FenwickTreeRangeQueryPointUpdate.java)
     * [Fenwick Tree (range update, point query)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/fenwicktree/FenwickTreeRangeUpdatePointQuery.java)
+* [Fibonacci Heap](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/fibonacciheap)
 * [Set](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/set)
 * [:movie_camera:](https://www.youtube.com/watch?v=2E54GqF0H4s)[Hashtable](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/hashtable)
     * [Hashtable (double hashing)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/hashtable/HashTableDoubleHashing.java)
@@ -104,6 +106,7 @@ or
     * [Segment tree (array based, compact)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/segmenttree/CompactSegmentTree.java)
     * [Segment tree (pointer implementation)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/segmenttree/Node.java)
 * [Skip List [UNTESTED]](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/skiplist/SkipList.java)
+* [:movie_camera:](https://youtu.be/uUatD9AudXo)[Sparse Table](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/sparsetable/SparseTable.java)
 * [:movie_camera:](https://www.youtube.com/watch?v=L3ud3rXpIxA)[Stack](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/stack)
     * [Stack (integer only, fixed size, fast)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/stack/IntStack.java)
     * [Stack (linked list, generic)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/datastructures/stack/Stack.java)
@@ -161,6 +164,7 @@ or
 * [:movie_camera:](https://www.youtube.com/watch?v=OCKvEMF0Xac)[Identifying isomorphic trees](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/TreeIsomorphism.java) **- O(?)**
 * [:movie_camera:](https://www.youtube.com/watch?v=Fa3VYhQPTOI)[Tree center(s)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/TreeCenter.java) **- O(V+E)**
 * [Tree diameter](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/TreeDiameter.java) **- O(V+E)**
+* [:movie_camera:](https://www.youtube.com/watch?v=sD1IoalFomA)[Lowest Common Ancestor (LCA, Euler tour)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/LowestCommonAncestorEulerTour.java) **- O(1) queries, O(nlogn) preprocessing**
 
 ### Network flow
 * [Bipartite graph verification (adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/BipartiteGraphCheckAdjacencyList.java) **- O(V+E)**
@@ -173,7 +177,7 @@ or
 * [Min Cost Max Flow (Bellman-Ford, adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/MinCostMaxFlowWithBellmanFord.java) **- O(E<sup>2</sup>V<sup>2</sup>)**
 * [Min Cost Max Flow (Johnson's algorithm, adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/MinCostMaxFlowJohnsons.java) **- O(E<sup>2</sup>Vlog(V))**
 
-### Other graph theory
+### Main graph theory algorithms
 *  [:movie_camera:](https://www.youtube.com/watch?v=aZXi1unBdJA)[Articulation points/cut vertices (adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/ArticulationPointsAdjacencyList.java) **- O(V+E)**
 * [Bellman-Ford (edge list, negative cycles, fast & optimized)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/BellmanFordEdgeList.java) **- O(VE)**
 * [:movie_camera:](https://www.youtube.com/watch?v=lyw4FaxrwHg)[Bellman-Ford (adjacency list, negative cycles)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/BellmanFordAdjacencyList.java) **- O(VE)**
@@ -191,6 +195,7 @@ or
 * [:movie_camera:](https://www.youtube.com/watch?v=8MpoO2zA2l4)[Eulerian Path (directed edges)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/EulerianPathDirectedEdgesAdjacencyList.java) **- O(E+V)**
 * [:movie_camera:](https://www.youtube.com/watch?v=4NQ3HnhyNfQ)[Floyd Warshall algorithm (adjacency matrix, negative cycle check)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/FloydWarshallSolver.java) **- O(V<sup>3</sup>)**
 * [Graph diameter (adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/GraphDiameter.java) **- O(VE)**
+* [Kahn's algorithm (topological sort, adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/Kahns.java) **- O(E+V)**
 * [Kruskal's min spanning tree algorithm (edge list, union find)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/KruskalsEdgeList.java) **- O(Elog(E))**
 * [:movie_camera:](https://www.youtube.com/watch?v=JZBQLXgSGfs)[Kruskal's min spanning tree algorithm (edge list, union find, lazy sorting)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/KruskalsEdgeListPartialSortSolver.java) **- O(Elog(E))**
 * [:movie_camera:](https://www.youtube.com/watch?v=jsmMtJpPnhU)[Prim's min spanning tree algorithm (lazy version, adjacency list)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/LazyPrimsAdjacencyList.java) **- O(Elog(E))**
@@ -242,6 +247,7 @@ or
 * [Sliding Window Minimum/Maximum](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/other/SlidingWindowMaximum.java) **- O(1)**
 * [Square Root Decomposition](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/other/SquareRootDecomposition.java) **- O(1) point updates, O(√n) range queries**
 * [Unique set combinations](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/other/UniqueCombinations.java) **- O(n choose r)**
+* [Lazy Range Adder](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/other/LazyRangeAdder.java) **- O(1) range updates, O(n) to finalize all updates**
 
 # Search algorithms
 * [Binary search (real numbers)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/search/BinarySearch.java) **- O(log(n))**
@@ -266,7 +272,8 @@ or
 * [:movie_camera:](https://www.youtube.com/watch?v=Ic80xQFWevc)[Longest Common Substring (LCS)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/LongestCommonSubstring.java) **- O(nlog(n)) bounded by SA construction, otherwise O(n)**
 * [:movie_camera:](https://www.youtube.com/watch?v=OptoHwC3D-Y)[Longest Repeated Substring (LRS)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/LongestRepeatedSubstring.java) **- O(nlog(n))**
 * [Manacher's algorithm (finds all palindromes in text)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/ManachersAlgorithm.java) **- O(n)**
-* [Rabin-Karp algorithm (finds pattern matches in text)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/RabinKarp.java) **- O(n+m)**
+* [Rabin-Karp algorithm (finds pattern match positions in text)](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/RabinKarp.java) **- O(n+m)**
+* [Boyer-Moore (finds pattern match positions in text)[UNTESTED]](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/BoyerMooreStringSearch.java) **- O(n+m)**
 * [Substring verification with suffix array](https://github.com/williamfiset/algorithms/tree/master/src/main/java/com/williamfiset/algorithms/strings/SubstringVerificationSuffixArray.java) **- O(nlog(n)) SA construction and O(mlog(n)) per query**
 
 # License
